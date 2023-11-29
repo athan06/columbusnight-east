@@ -1,0 +1,252 @@
+:root{
+    --main-color: #eea54c;
+    --black:#13131a;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    color: aliceblue;
+}
+
+body{
+    background-color: var(--black);
+}
+
+.header{
+    height: 4rem;
+    width: 100%;
+    border-bottom: var(--border);
+    box-sizing: border-box;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 1rem;
+}
+
+.one{
+    font-size: 33px;
+    color: var(--main-color);
+}
+
+section{
+    padding-top: 6rem;
+}
+
+.start{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.inside1{
+    width: 440px;
+    height: 300px;
+    background-color: var(--black);
+
+}
+
+.school{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: var(--border);
+}
+
+.school h4{
+    color: var(--main-color);
+}
+
+.party{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 35px;    
+}
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.sub h6{
+    color: rgb(255, 220, 156);
+    font-size: 20px;
+}
+
+.sub p{
+    font-size: 16px;
+    padding-top: .3rem;
+}
+
+.address{
+    position: relative;
+    top: 1.5rem;
+    padding: .5rem;
+    font-size: 12px;
+    width: 200px;
+    text-align: center;
+}
+
+.address p{
+    color: red;
+}
+
+.clock{
+    position: relative;
+    top: -1rem;
+    padding: .5rem;
+    font-size: 15px;
+    width: 200px;
+    float: right;
+    text-align: center;
+}
+
+.clock p{
+    color: red;
+}
+
+.inside2{
+    width: 180px;
+    height: 300px;
+    background-color: var(--main-color);
+    border-left: .15rem dashed;
+}
+
+.stub{
+    width: 130px;
+    height: 130px;
+    margin: 1rem 1.5rem .3rem 1.5rem;
+    background-color: aliceblue;
+}
+
+.attendance{
+    width: 130px;
+    position: relative;
+    left: 1.5rem;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.final{
+    width: 160px;
+    position: relative;
+    left: .5rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+@media (min-width:640px){
+    .start{
+        width: 640px;
+    }
+
+    .one{
+        font-size: 33px;
+    }
+
+    .inside1{
+        width: 440px;
+    }
+
+    .inside2{
+        width: 180px;
+    }
+}
+
+@media (min-width: 320px) and (max-width:639px){
+    .start{
+        width: 320px;
+        height: 220px;
+    }
+
+    .one{
+        font-size: 20px;
+    }
+
+    .inside1{
+        width: 200px;
+        height: 200px;
+    }
+
+    .school h4{
+        font-size: 12px;
+    }
+
+    .party{
+        font-size: 16px;
+    }
+
+    .sub h6{
+        font-size: 10px;
+     }
+
+     .sub p{
+        font-size: 10px;
+     }
+
+     .address{
+        top: 1rem;
+        padding: -.1rem;
+        font-size: 6px;
+        width: 100px;
+     }
+
+     .clock{
+        top: -.7rem;
+        padding: -.1rem;
+        font-size: 7px;
+        width: 100px;
+     }
+
+    .inside2{
+        width: 100px;
+        height: 200px;
+    }
+
+    .stub{
+        width: 66px;
+        height: 66px;
+        margin: .5rem 1rem .3rem 1rem;
+    }
+
+    .attendance{
+        width: 70px;
+        left: 1rem;
+        font-size: 10px;
+    }
+
+    .final{
+        width: 100px;
+        left: -.1rem;
+        margin-top: 4rem;
+        font-size: 9px;
+    }
+
+}

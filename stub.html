@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stub.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="title">
+        <span class="one">East Systems Colleges of Rizal</span>
+      </div>
+    </header>
+
+    <section>
+      <div class="start">
+        <div class="inside1">
+          <div class="school">
+            <h4>east systems colleges of rizal</h4>
+          </div>
+
+          <div class="party">
+            <h3>
+              <span class="text-white">THE NIGHT OF<br /></span>
+              <span class="text-white"> COLUMBUS</span>
+            </h3>
+          </div>
+
+          <div class="sub">
+            <h6>FREE FOODS | LIVE BAND <br /></h6>
+
+            <p>December25,2023 | Monday <br /></p>
+            <p>Come and Join us</p>
+          </div>
+
+          <div class="address">
+            <p>
+              @ J. Pascual Street, San Pedro, <br />
+              Morong Rizal
+            </p>
+          </div>
+
+          <div class="clock">
+            <p>time: 5pm - 6am</p>
+          </div>
+        </div>
+
+        <div class="inside2">
+          <div class="stub" id="stub-qr"></div>
+
+          <div class="attendance">
+            <p>
+              SCAN FOR <br />
+              ATTENDANCE
+            </p>
+          </div>
+
+          <div class="final">
+            <p>YOU'RE WELCOME!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchParams = new URLSearchParams(window.location.search);
+        const firstname = searchParams.get("firstname");
+
+        console.log(firstname);
+
+        const qrcode = new QRCode(document.getElementById("stub-qr"), {
+          text: firstname,
+          width: 130,
+          height: 130,
+          colorDark: "#000000",
+          colorLight: "#ffffff",
+        });
+      });
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"
+      integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
